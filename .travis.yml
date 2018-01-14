@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "6"
+dist: trusty
+addons:
+  code_climate:
+    repo_token: $CC_TEST_REPORTER_ID
+before_script:
+  - npm install -g codeclimate-test-reporter
+  - cd functions && npm install
+after_success:
+  - npm run coverage # converts to lcov format
+  - codeclimate-test-reporter < ./reports/coverage/lcov.info

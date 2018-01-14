@@ -1,0 +1,44 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "test": "mocha test/*-test.js",
+    "lint": "eslint ."
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-airbnb-base",
+    "env": {
+      "node": true,
+      "mocha": true
+    }
+  },
+  "dependencies": {
+    "asyncawait": "^1.0.6",
+    "firebase-admin": "~5.4.2",
+    "firebase-functions": "^0.7.1",
+    "moment": "^2.20.0",
+    "object-hash": "^1.2.0",
+    "pify": "^3.0.0",
+    "rss-parser": "^2.10.8",
+    "trim": "0.0.1",
+    "url": "^0.11.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-groupon-node6": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^2.1.4",
+    "eslint-plugin-prettier": "^2.3.1",
+    "mocha": "^4.0.1",
+    "nock": "^9.1.4",
+    "prettier": "1.8.2"
+  }
+}
