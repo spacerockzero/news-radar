@@ -17,10 +17,6 @@
 			{
 				"source": "/newarticles",
 				"function": "newArticles"
-			},
-			{
-				"source": "**",
-				"desination": "/build/index.html"
 			}
 		]
 	},
