@@ -58,7 +58,7 @@ const searchAggregator = jsync((query) => {
   return schemaContent;
 });
 
-const getTopicDistribution = (topicPriorityArr, numArticlesToGet) =>
+const getTopicDistribution = (topicPriorityArr = [], numArticlesToGet) =>
   // for given topic priorities,
   // return the count per topic in the distribution, unshuffled
   // even distribution for now, maybe weighted later
@@ -68,8 +68,7 @@ const getTopicDistribution = (topicPriorityArr, numArticlesToGet) =>
     return dist;
   });
 
-const mergeArticleResults = results =>
-  results.reduce((curr, next) => curr.concat(next));
+const mergeArticleResults = results => results.reduce((curr, next) => curr.concat(next));
 
 module.exports = {
   cleanObjects,

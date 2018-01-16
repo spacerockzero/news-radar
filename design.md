@@ -53,11 +53,11 @@ for 10 articles, there should be:
 - [x] search db, then aggregator
 - [x] get new articles functions
 - [x] filter read articles backend
-- [ ] archive of read articles backend
-- [ ] archive of read articles fronted
+- [x] new articles frontend
 - [ ] read articles frontend
 - [ ] populate topics frontend
 - [ ] saved articles frontend
 - [ ] search frontend
-- [ ] new articles frontend
 - [ ] uprank / downrank topic/article frontend
+- [ ] archive of read articles backend
+- [ ] archive of read articles fronted
